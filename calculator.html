@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@500&display=swap">
+</head>
+<body>
+    <div id="wrap">
+        <!-- <header id="header" data-include="/static/header.html"></header> -->
+        <header id="header">
+            <div id="header_contents">
+                <div id="header_logo" >
+                    <a href="index.html">
+                        <span id="logo_img" >
+                            <img src="resources/logo.png" id="logo_img">
+                        </span>
+                        <span id="logo_text">
+                            TEST
+                        </span>
+                    </a>
+                </div>
+                <div id="header_function">
+            
+                </div>
+            </div>
+        </header>
+        <div class="contents">
+            <div class="calculator">
+                <div class="display">
+                    <div class="display_nav">
+                        <div class="display_nav_area">
+                            <div class="display_nav_btn" onclick="nofunc()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <circle cx="6" cy="6" r="6" fill="#ED6A5E"/>
+                                </svg> 
+                            </div>
+                            <div class="display_nav_btn" onclick="nofunc()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <circle cx="6" cy="6" r="6" fill="#F4BF4F"/>
+                                </svg>
+                            </div>
+                            <div class="display_nav_btn" onclick="nofunc()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <circle cx="6" cy="6" r="6" fill="#62C554"/>
+                                </svg>    
+                            </div>                            
+                        </div> 
+                    </div>
+                    <div class="display_result">
+                        <div class="display_result_prev" id="off">0</div>
+                        <div class="display_result_input">0</div>
+                    </div>
+                </div>
+                <div class="numpad">
+                    <div class="numpad_row">
+                        <button class="numpad_btn btn_403C3B">AC</button>
+                        <button class="numpad_btn btn_403C3B">+/-</button>
+                        <button class="numpad_btn btn_403C3B">%</button>
+                        <button class="numpad_btn btn_F2A33C">/</button>
+                    </div>
+                    <div class="numpad_row">
+                        <button data-val="7" class="numpad_btn btn_5F5C5C">7</button>
+                        <button class="numpad_btn btn_5F5C5C">8</button>
+                        <button class="numpad_btn btn_5F5C5C">9</button>
+                        <button class="numpad_btn btn_F2A33C">*</button>
+                    </div>
+                    <div class="numpad_row">
+                        <button class="numpad_btn btn_5F5C5C">4</button>
+                        <button class="numpad_btn btn_5F5C5C">5</button>
+                        <button class="numpad_btn btn_5F5C5C">6</button>
+                        <button class="numpad_btn btn_F2A33C operator">-</button>
+                    </div>
+                    <div class="numpad_row">
+                        <button class="numpad_btn btn_5F5C5C">1</button>
+                        <button class="numpad_btn btn_5F5C5C">2</button>
+                        <button class="numpad_btn btn_5F5C5C">3</button>
+                        <button class="numpad_btn btn_F2A33C">+</button>
+                    </div>
+                    <div class="numpad_row">
+                        <button class="numpad_btn numpad_btn_double btn_5F5C5C btn_radius_left">0</button>
+                        <button class="numpad_btn btn_5F5C5C">.</button>
+                        <button data-equals class="numpad_btn btn_F2A33C btn_radius_right">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </div>
+    <script src="js/include.js"></script>
+    <script src="js/calculator/main.js"></script>
+    
+</body>
+</html>
