@@ -5,7 +5,7 @@ const $area_btn = document.getElementById('area-btn');
 const data = {
     prev : '',
     curr : '',
-    operator:undefined,
+    operator: undefined,
     pressedResult : false
 }
 
@@ -16,6 +16,7 @@ $area_btn.addEventListener('click',(e)=>{
     //리셋인 경우
     if(target.id == "reset"){
         reset_data();
+        console.log('Press Reset');
         return;}
 
     //숫자인경우
