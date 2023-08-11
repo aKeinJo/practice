@@ -6,7 +6,7 @@ let InfoPannal = ''
 
 InfoPannal += '<div id="info_pannal">'
 InfoPannal += '   <p>안내창임</p>'
-InfoPannal += '   <button id="pannal_btn_close" onclick="pannal_close()">닫기</button>'
+InfoPannal += '   <button id="pannal_btn_close" onclick="PannalClose()">닫기</button>'
 InfoPannal += '</div>'
 
 if (PannalBtnText == '열기'){

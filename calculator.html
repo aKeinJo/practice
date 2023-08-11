@@ -12,7 +12,8 @@
 </head>
 <body>
     <div id="wrap">
-        <header id="header" data-include="/static/header.html"></header>
+        <header id="header" data-include="https://akeinjo.github.io/practice/static/header.html">
+        </header>
         <div class="contents">
             <div class="calculator">
                 <div class="display">
@@ -42,33 +43,33 @@
                 </div>
                 <div class="numpad">
                     <div class="numpad_row">
-                        <button class="numpad_btn btn_403C3B">AC</button>
-                        <button class="numpad_btn btn_403C3B">+/-</button>
-                        <button class="numpad_btn btn_403C3B">%</button>
-                        <button class="numpad_btn btn_F2A33C">/</button>
+                        <button id="btn_reset" class="numpad_btn btn_403C3B">AC</button>
+                        <button data-val="-1" class="numpad_btn btn_403C3B btn_num">+/-</button>
+                        <button data-val="" class="numpad_btn btn_403C3B">%</button>
+                        <button data-val="/" class="numpad_btn btn_F2A33C btn_op">/</button>
                     </div>
                     <div class="numpad_row">
-                        <button data-val="7" class="numpad_btn btn_5F5C5C">7</button>
-                        <button class="numpad_btn btn_5F5C5C">8</button>
-                        <button class="numpad_btn btn_5F5C5C">9</button>
-                        <button class="numpad_btn btn_F2A33C">*</button>
+                        <button data-val="7" class="numpad_btn btn_5F5C5C btn_num">7</button>
+                        <button data-val="8" class="numpad_btn btn_5F5C5C btn_num">8</button>
+                        <button data-val="9" class="numpad_btn btn_5F5C5C btn_num">9</button>
+                        <button data-val="*" class="numpad_btn btn_F2A33C btn_op">*</button>
                     </div>
                     <div class="numpad_row">
-                        <button class="numpad_btn btn_5F5C5C">4</button>
-                        <button class="numpad_btn btn_5F5C5C">5</button>
-                        <button class="numpad_btn btn_5F5C5C">6</button>
-                        <button class="numpad_btn btn_F2A33C operator">-</button>
+                        <button data-val="4" class="numpad_btn btn_5F5C5C btn_num">4</button>
+                        <button data-val="5" class="numpad_btn btn_5F5C5C btn_num">5</button>
+                        <button data-val="6" class="numpad_btn btn_5F5C5C btn_num">6</button>
+                        <button data-val="-" class="numpad_btn btn_F2A33C btn_op">-</button>
                     </div>
                     <div class="numpad_row">
-                        <button class="numpad_btn btn_5F5C5C">1</button>
-                        <button class="numpad_btn btn_5F5C5C">2</button>
-                        <button class="numpad_btn btn_5F5C5C">3</button>
-                        <button class="numpad_btn btn_F2A33C">+</button>
+                        <button data-val="1" class="numpad_btn btn_5F5C5C btn_num">1</button>
+                        <button data-val="2" class="numpad_btn btn_5F5C5C btn_num">2</button>
+                        <button data-val="3" class="numpad_btn btn_5F5C5C btn_num">3</button>
+                        <button data-val="4" class="numpad_btn btn_F2A33C btn_op">+</button>
                     </div>
                     <div class="numpad_row">
-                        <button class="numpad_btn numpad_btn_double btn_5F5C5C btn_radius_left">0</button>
-                        <button class="numpad_btn btn_5F5C5C">.</button>
-                        <button data-equals class="numpad_btn btn_F2A33C btn_radius_right">=</button>
+                        <button data-val="0" class="numpad_btn btn_5F5C5C btn_num btn_radius_left numpad_btn_double">0</button>
+                        <button data-val="." class="numpad_btn btn_5F5C5C">.</button>
+                        <button id="btn_result" class="numpad_btn btn_F2A33C btn_radius_right">=</button>
                     </div>
                 </div>
             </div>

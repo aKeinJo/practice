@@ -25,7 +25,7 @@ input[type=number] {
 }
 .calculator{
     width:240px;
-    height:340px;
+    height: auto;
     box-shadow: 0 16px 30px rgba(0, 0, 0, 0.3);
     border: 1px solid rgb(255, 255, 255);
     border-radius: 8px;
@@ -52,7 +52,6 @@ input[type=number] {
 }
 
 .display_result{
-    height: 66px;
 }
 
 .display_result_prev{
@@ -67,6 +66,8 @@ input[type=number] {
     width: 200px;
     text-align: right;
     margin: 0 auto;
+    position: relative;
+    display: block;
 }
 
 .display_result_prev#off {
@@ -81,6 +82,7 @@ input[type=number] {
     border: 0;
     padding: 0;
     margin: 0 20px 0 20px;
+    word-break: break-all;
 }
 
 .numpad_btn{
@@ -122,7 +124,7 @@ input[type=number] {
     background-color: #B2B0B0;
 }
 
-.btn_radius_left{
+.btn_radius_left{    
     border-radius: 0 0 0 8px;
 }
 
