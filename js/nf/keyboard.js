@@ -61,7 +61,7 @@ document.body.addEventListener('keyup', function (e) {
 });
 
 function size () {
-    var size = keyboard.parentNode.clientWidth / 90;
+    var size = keyboard.parentNode.clientWidth / 60;
     keyboard.style.fontSize = size + 'px';
     console.log(size);
 }
