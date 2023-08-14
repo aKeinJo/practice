@@ -1,5 +1,2 @@
-const slide = document.querySelector(".slide_contents");
-let slideWidth = slide.clientWidth;
-
-const slide = document.querySelector(".slide_wrap");
-let slideWidth = slide.clientWidth;
+const $slideWrap = document.querySelector('.slide_wrap');
+const $sildeContents = document.querySelector('.slide_contents');
