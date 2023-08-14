@@ -6,9 +6,6 @@
     <title>calculator</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/calculator.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@500&display=swap">
 </head>
 <body>
     <div id="wrap">
@@ -18,58 +15,56 @@
             <div class="calculator">
                 <div class="display">
                     <div class="display_nav">
-                        <div class="display_nav_area">
-                            <div class="display_nav_btn" onclick="nofunc()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                <circle cx="6" cy="6" r="6" fill="#ED6A5E"/>
-                                </svg> 
-                            </div>
-                            <div class="display_nav_btn" onclick="nofunc()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                    <circle cx="6" cy="6" r="6" fill="#F4BF4F"/>
-                                </svg>
-                            </div>
-                            <div class="display_nav_btn" onclick="nofunc()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                    <circle cx="6" cy="6" r="6" fill="#62C554"/>
-                                </svg>    
-                            </div>                            
-                        </div> 
+                        <div class="display_nav_btn" onclick="noFunc()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <circle cx="6" cy="6" r="6" fill="#ED6A5E"/>
+                            </svg> 
+                        </div>
+                        <div class="display_nav_btn" onclick="noFunc()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <circle cx="6" cy="6" r="6" fill="#F4BF4F"/>
+                            </svg>
+                        </div>
+                        <div class="display_nav_btn" onclick="noFunc()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <circle cx="6" cy="6" r="6" fill="#62C554"/>
+                            </svg>    
+                        </div>                            
                     </div>
                     <div class="display_result">
-                        <div class="display_result_prev" id="off">0</div>
+                        <div class="display_result_prev prev_off">0</div>
                         <div class="display_result_input">0</div>
                     </div>
                 </div>
-                <div class="numpad">
-                    <div class="numpad_row">
-                        <button id="btn_reset" class="numpad_btn btn_403C3B">AC</button>
-                        <button data-val="-1" class="numpad_btn btn_403C3B btn_num">+/-</button>
-                        <button data-val="%" class="numpad_btn btn_403C3B" onclick="nofunc()">%</button>
-                        <button data-val="/" class="numpad_btn btn_F2A33C btn_op">/</button>
+                <div class="btn_area">
+                    <div class="btn_area_low">
+                        <button id="btn_reset" class="btn_403C3B">AC</button>
+                        <button data-val="-1" class="btn_403C3B btn_num">+/-</button>
+                        <button data-val="%" class="btn_403C3B" onclick="noFunc()">%</button>
+                        <button data-val="/" class="btn_F2A33C btn_op">÷</button>
                     </div>
-                    <div class="numpad_row">
-                        <button data-val="7" class="numpad_btn btn_5F5C5C btn_num">7</button>
-                        <button data-val="8" class="numpad_btn btn_5F5C5C btn_num">8</button>
-                        <button data-val="9" class="numpad_btn btn_5F5C5C btn_num">9</button>
-                        <button data-val="*" class="numpad_btn btn_F2A33C btn_op">*</button>
+                    <div class="btn_area_low">
+                        <button data-val="7" class="btn_5F5C5C btn_num">7</button>
+                        <button data-val="8" class="btn_5F5C5C btn_num">8</button>
+                        <button data-val="9" class="btn_5F5C5C btn_num">9</button>
+                        <button data-val="*" class="btn_F2A33C btn_op">×</button>
                     </div>
-                    <div class="numpad_row">
-                        <button data-val="4" class="numpad_btn btn_5F5C5C btn_num">4</button>
-                        <button data-val="5" class="numpad_btn btn_5F5C5C btn_num">5</button>
-                        <button data-val="6" class="numpad_btn btn_5F5C5C btn_num">6</button>
-                        <button data-val="-" class="numpad_btn btn_F2A33C btn_op">-</button>
+                    <div class="btn_area_low">
+                        <button data-val="4" class="btn_5F5C5C btn_num">4</button>
+                        <button data-val="5" class="btn_5F5C5C btn_num">5</button>
+                        <button data-val="6" class="btn_5F5C5C btn_num">6</button>
+                        <button data-val="-" class="btn_F2A33C btn_op">-</button>
                     </div>
-                    <div class="numpad_row">
-                        <button data-val="1" class="numpad_btn btn_5F5C5C btn_num">1</button>
-                        <button data-val="2" class="numpad_btn btn_5F5C5C btn_num">2</button>
-                        <button data-val="3" class="numpad_btn btn_5F5C5C btn_num">3</button>
-                        <button data-val="4" class="numpad_btn btn_F2A33C btn_op">+</button>
+                    <div class="btn_area_low">
+                        <button data-val="1" class="btn_5F5C5C btn_num">1</button>
+                        <button data-val="2" class="btn_5F5C5C btn_num">2</button>
+                        <button data-val="3" class="btn_5F5C5C btn_num">3</button>
+                        <button data-val="4" class="btn_F2A33C btn_op">+</button>
                     </div>
-                    <div class="numpad_row">
-                        <button data-val="0" class="numpad_btn btn_5F5C5C btn_num btn_radius_left numpad_btn_double">0</button>
-                        <button data-val="." class="numpad_btn btn_5F5C5C">.</button>
-                        <button id="btn_result" class="numpad_btn btn_F2A33C btn_radius_right">=</button>
+                    <div class="btn_area_low">
+                        <button data-val="0" class="btn_5F5C5C btn_num btn_radius_left btn_double">0</button>
+                        <button data-val="." class="btn_5F5C5C">.</button>
+                        <button id="btn_result" class="btn_F2A33C btn_radius_right">=</button>
                     </div>
                 </div>
             </div>
@@ -77,6 +72,6 @@
     </div>
     <script src="js/include.js"></script>
     <script src="js/calculator/main.js"></script>
-    
+
 </body>
 </html>

@@ -24,7 +24,7 @@ input[type=number] {
     align-items: center;
 }
 .calculator{
-    width:240px;
+    width: 240px;
     height: auto;
     box-shadow: 0 16px 30px rgba(0, 0, 0, 0.3);
     border: 1px solid rgb(255, 255, 255);
@@ -37,66 +37,55 @@ input[type=number] {
 }
 
 .display_nav{
-    height: 24px;
-    flex-shrink: 0;
-}
-
-.display_nav_area{
-    padding: 8px 0 4px 8px;
+    padding: 8px;
+    height: 12px;
 }
 
 .display_nav_btn{
     position: relative;
     float: left;
     margin-right: 8px;
+    display: flex;
 }
 
 .display_result{
-}
-
-.display_result_prev{
-    color: #E9E9E9;
-    width: 200px;
-    text-align: right;
+    height: auto;
+    width: 208px;
+    padding: 0 0 8px 0;
     margin: 0 auto;
 }
 
 .display_result_prev{
     color: #E9E9E9;
-    width: 200px;
     text-align: right;
+    width: 208px;
     margin: 0 auto;
-    position: relative;
-    display: block;
 }
 
-.display_result_prev#off {
+.display_result_prev.prev_off {
     opacity: 0;
 }
 
 .display_result_input{
-    width: 200px;
     color: #E9E9E9;
     text-align: right;
-    font-size: 35px;
-    border: 0;
-    padding: 0;
-    margin: 0 20px 0 20px;
+    font-size: 32px;
+    margin: 0 auto;
     word-break: break-all;
 }
 
-.numpad_btn{
+.btn_double{
+    width: 120px !important;
+    height: 50px;
+}
+
+.btn_area Button{
     color: #E2E1E1;
     border: 1px solid #2B2726;
     margin: 0;
     float:left;
     font-size: 24px;
     width: 60px;
-    height: 50px;
-}
-
-.numpad_btn_double{
-    width: 120px;
     height: 50px;
 }
 
