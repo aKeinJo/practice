@@ -1,6 +1,6 @@
 .slide_wrap{
     position: relative;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -9,7 +9,7 @@
     flex-wrap: nowrap;
     overflow: hidden;
     position: relative;
-    width: 1200px;
+    width: 100%;
 }
 
 
@@ -17,7 +17,7 @@
     display: flex;
     text-decoration-line: none;
     margin:auto;
-    width: 1200px;
+    width: 100%;
 }
   
 .slide{
@@ -26,17 +26,18 @@
     justify-content: center;
     position: relative;
     left: 0px;
-    height: 360px;
     flex-shrink: 0;
     transition: left 0.15s;  
+    width: 100vw;
+    max-width: 1200px;
+    height: 360px;
+}
+
+.slide_text{
     font-size: 72px;
     font-weight: bold;
     font-style: italic;
     color:#fefefe;
-    width: 1200px;
-}
-
-.slide_text{
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -44,44 +45,38 @@
     margin: auto;
 }
   
-.slide_1{
+.slide.slide_1{
     background-color: aqua;
 }
 
-.slide_2{
+.slide.slide_2{
     background-color: blue;
 }
 
-.slide_3{
+.slide.slide_3{
     background-color: chocolate;
 }
 
 .slide_btn_area{
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 1200px;
-    pointer-events: none;
-    margin: 0 3px
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+
+    width: 100%;
 }
 
 .slide_btn{
-    display: inline-flex;
     position: absolute;
-    justify-content: center;
-    align-items: center;
     width: 48px;
     height: 48px;
     cursor: pointer;
     background-color: #fff;
     border-radius: 50%;
-    font-size: 16px;
-    pointer-events: auto;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.06);
     border: 1px solid #f0f0f0;
-    top: 50%;
 }
 
 .slide_btn_prev{

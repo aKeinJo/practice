@@ -13,21 +13,17 @@
     <header id="header" data-include="https://akeinjo.github.io/practice/static/header.html">
     </header>
     <div class="toc">
-            <p>목차</p>
-            <div class="toc_wrap">
-            </div>
+        <p>목차</p>
+        <div class="toc_wrap">
         </div>
-        <!-- <ul>
-            <il><a href="#title_alert_input">입력창 안 내용을 알럿으로 보내기</a></il>
-            <il><a href="#title_easy_calc">간단계산기임</a></il>
-            <il><a href="#title_info_pannal">안내창</a></il>
-        </ul> -->
+    </div>
 <div class="contents_wrap">
     <section>
     <h1>input 내용 alert로</h1>
         <input id="alert_input_text" onchange="alert_input_reaction()" placeholder="입력해라">
         <button id="alert_input_button" onclick="alert_input_reaction()">alert</button>
         <p>엔터와 버튼 클릭을 해보거라</p>
+        <script src="js/nf/alert_input.js" type="text/javascript"></script>
     </section>
     <section>
         <h1 id="title_easy_calc">간단계산기</h1>
@@ -63,18 +59,19 @@
         </div><!-- caculator -->
         <p>내가만든게 아님.. ㅠ</p>
         <p>출처 : <a href='https://aosceno.tistory.com/615'>https://aosceno.tistory.com/615/</a></p>
+        <script src="js/nf/calc.js"></script>
     </section>
-    
     <section>
         <h1 id="title_info_pannal">안내창</h1>
-            <p>
-                <button id="pannal_btn">열기</button><button id="Pannal_Display_Refresh" onclick="PannalDisplayRefresh()">상태 새로고침</button>
-            </p>
-            <p id="pannal_display">
-        
-            </p>
-            <div id="info_pannal_wrap">
-            </div>
+        <p>
+            <button id="pannal_btn">열기</button><button id="Pannal_Display_Refresh" onclick="PannalDisplayRefresh()">상태 새로고침</button>
+        </p>
+        <p id="pannal_display">
+    
+        </p>
+        <div id="info_pannal_wrap">
+        </div>
+        <script src="js/nf/info_pannal.js" type="text/javascript"></script>
     </section>
     <section>
         <h1>슬라이드</h1>
@@ -90,13 +87,18 @@
           </div>
           <script src="js/nf/slide.js"></script>      
     </section>
+    <section>
+        <h1>피라미드</h1>
+        <button class="pyramid_generate" type="button">생성</button>
+        <div class="pyramid_area">
+        
+        </div>
+        <script src="js/nf/pyramid.js"></script>
+    </section>
     
 </div>
 <script src="js/include.js"></script>
 <script src="js/nf/main.js"></script>
-<script src="js/nf/calc.js"></script>
 <script src="js/nf/toc.js" type="text/javascript"></script>
-<script src="js/nf/alert_input.js" type="text/javascript"></script>
-<script src="js/nf/info_pannal.js" type="text/javascript"></script>
 </body>
 </html>
